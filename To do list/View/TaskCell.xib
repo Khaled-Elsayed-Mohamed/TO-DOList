@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="97" id="KGk-i7-Jjw" customClass="TaskCell" customModule="To_do_list" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="todo" translatesAutoresizingMaskIntoConstraints="NO" id="5Rc-py-XLV">
+                        <rect key="frame" x="12" y="17" width="97" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="KMT-e9-Jzn"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUg-jC-Irv">
+                        <rect key="frame" x="291" y="35" width="34" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="eUg-jC-Irv" secondAttribute="height" multiplier="1:1" id="TQQ-ae-qcE"/>
+                            <constraint firstAttribute="height" constant="34" id="eEZ-Bg-8oO"/>
+                        </constraints>
+                        <state key="normal" image="deleteIconCopy"/>
+                        <connections>
+                            <action selector="deleteButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2Zl-FW-ogB"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date and time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLU-F8-48F">
+                        <rect key="frame" x="146" y="17" width="118" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TODO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8j3-bR-Tn3">
+                        <rect key="frame" x="146" y="50" width="127" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5Rc-py-XLV" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="1:1" id="0HO-xB-CFw"/>
+                    <constraint firstItem="8j3-bR-Tn3" firstAttribute="leading" secondItem="fLU-F8-48F" secondAttribute="leading" id="MXT-dx-fTI"/>
+                    <constraint firstItem="5Rc-py-XLV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="QlG-UX-GnB"/>
+                    <constraint firstItem="fLU-F8-48F" firstAttribute="top" secondItem="5Rc-py-XLV" secondAttribute="top" id="Qyz-xd-X5U"/>
+                    <constraint firstItem="fLU-F8-48F" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.237113" id="ZGL-nh-cPZ"/>
+                    <constraint firstItem="8j3-bR-Tn3" firstAttribute="width" secondItem="fLU-F8-48F" secondAttribute="width" multiplier="1.07627" id="aQt-mA-ddb"/>
+                    <constraint firstItem="eUg-jC-Irv" firstAttribute="centerY" secondItem="5Rc-py-XLV" secondAttribute="centerY" id="aXH-2M-fJw"/>
+                    <constraint firstItem="8j3-bR-Tn3" firstAttribute="height" secondItem="fLU-F8-48F" secondAttribute="height" id="bUC-mc-wK3"/>
+                    <constraint firstItem="5Rc-py-XLV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="cgi-cG-ZuF"/>
+                    <constraint firstItem="fLU-F8-48F" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.359756" id="gEZ-3f-7FV"/>
+                    <constraint firstItem="8j3-bR-Tn3" firstAttribute="top" secondItem="fLU-F8-48F" secondAttribute="bottom" constant="10" id="m03-L7-mDf"/>
+                    <constraint firstItem="eUg-jC-Irv" firstAttribute="leading" relation="lessThanOrEqual" secondItem="fLU-F8-48F" secondAttribute="trailing" constant="27" id="ntS-OK-lDD"/>
+                    <constraint firstItem="fLU-F8-48F" firstAttribute="leading" secondItem="5Rc-py-XLV" secondAttribute="trailing" constant="37" id="w8i-cW-NHm"/>
+                    <constraint firstAttribute="trailing" secondItem="eUg-jC-Irv" secondAttribute="trailing" constant="3" id="wlO-Fq-aOV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dataAndTime" destination="fLU-F8-48F" id="8HN-sY-IAw"/>
+                <outlet property="taskContent" destination="8j3-bR-Tn3" id="2Ae-VH-stf"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="171.09375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="deleteIconCopy" width="14" height="20"/>
+        <image name="todo" width="152" height="152"/>
+    </resources>
+</document>
