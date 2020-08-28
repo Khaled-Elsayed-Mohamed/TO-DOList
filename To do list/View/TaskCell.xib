@@ -59,7 +59,7 @@
                     <constraint firstItem="5Rc-py-XLV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="cgi-cG-ZuF"/>
                     <constraint firstItem="fLU-F8-48F" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.359756" id="gEZ-3f-7FV"/>
                     <constraint firstItem="8j3-bR-Tn3" firstAttribute="top" secondItem="fLU-F8-48F" secondAttribute="bottom" constant="10" id="m03-L7-mDf"/>
-                    <constraint firstItem="eUg-jC-Irv" firstAttribute="leading" relation="lessThanOrEqual" secondItem="fLU-F8-48F" secondAttribute="trailing" constant="27" id="ntS-OK-lDD"/>
+                    <constraint firstItem="eUg-jC-Irv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fLU-F8-48F" secondAttribute="trailing" constant="27" id="ntS-OK-lDD"/>
                     <constraint firstItem="fLU-F8-48F" firstAttribute="leading" secondItem="5Rc-py-XLV" secondAttribute="trailing" constant="37" id="w8i-cW-NHm"/>
                     <constraint firstAttribute="trailing" secondItem="eUg-jC-Irv" secondAttribute="trailing" constant="3" id="wlO-Fq-aOV"/>
                 </constraints>
